@@ -199,8 +199,8 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Ga6Pcmf9yqV87YkvJy1++ceu2LqQMTVKfyKv8dXv5HfvQWL9yWgCnVp128YlPNniFd/pXakvqLXyLtuGG3fdmXtHGkxj98s6pEjEKEVUQJQk0+sueSt+yY6ENT63bJxpyIFlLcpwmoAhcuJAys8ZFB9WuZkB+zkW8is7hEj0b4AGyjqfu5UzgDmsqwOK58FsyW1pODN0fXlNws+A7SKi9XPqqssrIEDOyOZHKtCw7s9fqWfH4Yr9Vl/0FchQQTkNmD4DBkWr4RBDMuLk20zZmO9QZsLN90ykhknssJ/j9rTsPU22ZEpXI7UetuJeeHozOjnwgQvYCmuKjYw866yBr5Z/slWEBzz2XDLe7PcmbjEm6URwIZipR</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: #ee827c;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: #ede4e1;border-style: solid;color: #1f3134;"><div id="enc_error" style="display: inline-block;color: #ea5549;margin-left: 10px"></div>
+<div id="enc_content" style="display:none">U2FsdGVkX1/EFNwuanXsE3W1ed2DJQkHRVU4BqKrLm5ITO/lu4/oFkIwRvNmSNjTVUSBKMPag9fYCrGBcGH7jLhiWjWJEnFatiHhCIB4ScmE1UpwrzppLRGwK3gv1kMIP7GzmT5jDVyiWsgTO9CN765Oagonn6WcZ3Kac1zn2Y9KmK7Hj7SirCG0mx7FnuFrpTvP4zL5iDYbMgIVzHnGtH2IgrDQyOla2ivbcIcaqHG1upJmHXg+a2qem7iqgvWULxaBss76V9y2zaJWC39P055HZ4tKvMTEWBCx2HqxzxLGSp2DqmRAi/QT3mNYTD7uOytpu0cS7bq8aTIK7ssxoFDAfS0vbgzj3Rc7fe9FZyWzAs1xyXirs7gw2HOvzpdI</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: #fef263;border-style: solid;color: #4a488e;"><div id="enc_error" style="display: inline-block;color: #e2041b;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
 	document.getElementById("enc_error").innerHTML = "密码错误！"
