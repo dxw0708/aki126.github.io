@@ -21,14 +21,14 @@
     
     
     <meta name="keywords" content="必备技能">
-    <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+    <meta name="description" content="常规：hexo g + hexo d + hexo s 其他：hexo new ooo hexo cleanhexo ghexo d 启动服务器  hexo g hexo s  应用  hexo generta hexo deploy  万一出错：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;59088760&#x2F;answer&#x2F;161640592">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo发东西">
 <meta property="og:url" content="http://yoursite.com/2020/07/27/b2/index.html">
 <meta property="og:site_name" content="YUMENO MATAYUME">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="常规：hexo g + hexo d + hexo s 其他：hexo new ooo hexo cleanhexo ghexo d 启动服务器  hexo g hexo s  应用  hexo generta hexo deploy  万一出错：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;59088760&#x2F;answer&#x2F;161640592">
 <meta property="article:published_time" content="2020-07-27T09:55:05.000Z">
-<meta property="article:modified_time" content="2020-07-31T08:19:43.133Z">
+<meta property="article:modified_time" content="2020-07-31T08:39:47.320Z">
 <meta property="article:author" content="aki126">
 <meta property="article:tag" content="必备技能">
 <meta name="twitter:card" content="summary">
@@ -172,46 +172,21 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/IrF42l51C7Rasiu7FPKzteCgS1+moPfF1jSo/BjLEhSx2MU3nf2KVKAawZOJgUQyL4NB5SZhbpoO1adxD5lIXPxF4tisyZf+VSOL9xcgutyizGJMmHSC0Fa3GnB7Q7lWWUgkXiTenXlTxNIJZDb+hOqfjNsQyzOKI5DF6vYmr313lPdzZd2K+GNsRMCsoLWd/6qXJyC8augZ2neRZxR0a+agsity+VMif1uYYL+RaXedqlJS3DB2cg7CJSownI/xlEL7Q30BiR6yVdgO6Ub0bxUgC0tY6XIXgcJIHx1IMsOV/klRRKevMIncUThWw4cgjhIgP/AxxS77F+QYf+V+EKMrOFivF++H+DJqoivAlk9HLJKF4I2jGiMlBsEIG7kci4F8vFPm1D73cb6OninWIWDBP9GyTqG0YjegnH27RmtgKRW7y5DN+Za5nSfRLatSpqJ1PFvnk40bZAFiToCw/SenViysa42evgts1x/q76lqFv8C+b1k4M7xFmtjz3vdBN1y3Fm0biglK6oVHgZG/cGYj6esvkK4LR4qxN8ON74oSfb6FMuQzuUqEX2WYfnkO31N67qF0lw==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>常规：hexo g + hexo d + hexo s</p>
+<p>其他：<br>hexo new ooo</p>
+<p>hexo clean<br>hexo g<br>hexo d</p>
+<p>启动服务器</p>
+<ul>
+<li>hexo g</li>
+<li>hexo s</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>hexo generta</li>
+<li>hexo deploy</li>
+</ul>
+<p>万一出错：<a href="https://www.zhihu.com/question/59088760/answer/161640592" target="_blank" rel="noopener">https://www.zhihu.com/question/59088760/answer/161640592</a></p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -219,7 +194,7 @@ doDecrypt(passwd, onError);
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-07-31T08:19:43.133Z" itemprop="dateUpdated">2020-07-31 16:19:43</time>
+    Last updated: <time datetime="2020-07-31T08:39:47.320Z" itemprop="dateUpdated">2020-07-31 16:39:47</time>
 </span><br>
 
 

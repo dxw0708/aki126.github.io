@@ -21,14 +21,14 @@
     
     
     <meta name="keywords" content="日记">
-    <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+    <meta name="description" content="说是日记，其实也要扯到昨天的事。因为很久没有写了。高中开始有每天写日记的习惯，虽然并没有形成肌肉记忆，大概还算比较容易想起来的。高二用柯南的日历，高三用趁早。高考毕业也正好用完，没有再买，没钱。 每天都是千篇一律的废话，负能量，偶尔回头看，却发现写的都是当下的心情。就该这么卑微。 昨天，准确说是今天两点，终于趁着开心的尽头把第一个qq给注销了。顺便微信也是呢。有很轻松的感觉，偶尔想起来，一定会有不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="200727">
 <meta property="og:url" content="http://yoursite.com/2020/07/28/190727/index.html">
 <meta property="og:site_name" content="YUMENO MATAYUME">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="说是日记，其实也要扯到昨天的事。因为很久没有写了。高中开始有每天写日记的习惯，虽然并没有形成肌肉记忆，大概还算比较容易想起来的。高二用柯南的日历，高三用趁早。高考毕业也正好用完，没有再买，没钱。 每天都是千篇一律的废话，负能量，偶尔回头看，却发现写的都是当下的心情。就该这么卑微。 昨天，准确说是今天两点，终于趁着开心的尽头把第一个qq给注销了。顺便微信也是呢。有很轻松的感觉，偶尔想起来，一定会有不">
 <meta property="article:published_time" content="2020-07-27T16:14:19.000Z">
-<meta property="article:modified_time" content="2020-07-31T08:19:04.379Z">
+<meta property="article:modified_time" content="2020-07-31T08:42:50.854Z">
 <meta property="article:author" content="aki126">
 <meta property="article:tag" content="日记">
 <meta name="twitter:card" content="summary">
@@ -172,46 +172,14 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">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</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>说是日记，其实也要扯到昨天的事。因为很久没有写了。高中开始有每天写日记的习惯，虽然并没有形成肌肉记忆，大概还算比较容易想起来的。高二用柯南的日历，高三用趁早。高考毕业也正好用完，没有再买，没钱。</p>
+<p>每天都是千篇一律的废话，负能量，偶尔回头看，却发现写的都是当下的心情。<br>就该这么卑微。</p>
+<p>昨天，准确说是今天两点，终于趁着开心的尽头把第一个qq给注销了。顺便微信也是呢。<br>有很轻松的感觉，偶尔想起来，一定会有不舍，不舍。还有时机其实也不非常完美，不过也基本没什么要事了。<br>毕竟大家都毕业了呢，毕业会上既不想找人碰杯也没人来找，意外地很轻松呢。一直以来想逃离的人，终于不用见到了呢。<br>总结来说高中就是灰色的。明天我会努力把博客的颜色改掉的。</p>
+<p>所以对于高中同学，是没有留念的。反而是初中一些不在学校认识的朋友，有些不舍，同学就算了吧。说是不珍惜也好，身在福中不知福也好，我真是对同学没有什么好印象。真是奇怪难处的人。<br>怀念的是自己拍的照片，心情，还有svip7。</p>
+<p>不过是这样的未来展开，怀念过去这种事怎样都无所谓了。抱着对未来毫无念想的心态，过去的社交怎样都无所谓了。<br>而这也是意料中的一条线，不过是ture end，再过几个月的after story大概就bad end了。<br>最糟糕的。</p>
+<p>断绝过去所有的往来不是断绝与外界的交流。注销前无法解绑的vpn也重新花钱注册以防万一。能跟进时代，上推及时红心我推，及时看我推生放，及时买谷，还有什么需求呢？一天内勉强搞起了这个小破博客，就80出头的数学，白痴级个人博客还会疯狂报错，像极了在学校免费的信奥班学习简单算法还一堆报错被老师嫌弃的日子。<br>我明白，我大概真不是学这个的脑，大概学什么都不好，数学最不好。不过，咬着牙做这个的博客日记倒很方便，还可以给自己当网址导航。固然信奥课对我一直如同天书，用计算机上大概也比大多40代好些。即使是不合格的后浪，也总能被时代的浪潮裹挟向前。<br>无论如何，在活着不是为了自己的日子，有我推的陪伴，也总能喜笑颜开。<br>有意思的功能也许越来越多，简言之，先好好学学html吧。<br>。</p>
+<p><font size="5" color="#1c305c">残月欲曙天,明石枕风眠,浦上波逐浪,但见潮回旋。</font></p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -219,7 +187,7 @@ doDecrypt(passwd, onError);
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-07-31T08:19:04.379Z" itemprop="dateUpdated">2020-07-31 16:19:04</time>
+    Last updated: <time datetime="2020-07-31T08:42:50.854Z" itemprop="dateUpdated">2020-07-31 16:42:50</time>
 </span><br>
 
 
