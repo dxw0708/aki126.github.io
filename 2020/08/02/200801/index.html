@@ -21,14 +21,14 @@
     
     
     <meta name="keywords" content="日记">
-    <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+    <meta name="description" content="成功给switch设置了代理，就在刚才，一晚上折腾还唱不了歌索性看了kenn和前野的料理节目。声音太小啦。反正也在日亚有准备了。我也有疑惑前野的人气，不过现在姑且还在泥沼之中，也无话可说，只能说自带粉丝滤镜的锅。未来一年的计划已经出来了。剩下实行。还有几天考试，不过最近生肉什么也啃得很多，大概没问题吧。还有10张也。总之明早先唱歌？学院级大学还有资格被人拿出来问吗wwwwwwww有必要咨询吗www">
 <meta property="og:type" content="article">
 <meta property="og:title" content="200801">
 <meta property="og:url" content="http://yoursite.com/2020/08/02/200801/index.html">
 <meta property="og:site_name" content="YUMENO MATAYUME">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="成功给switch设置了代理，就在刚才，一晚上折腾还唱不了歌索性看了kenn和前野的料理节目。声音太小啦。反正也在日亚有准备了。我也有疑惑前野的人气，不过现在姑且还在泥沼之中，也无话可说，只能说自带粉丝滤镜的锅。未来一年的计划已经出来了。剩下实行。还有几天考试，不过最近生肉什么也啃得很多，大概没问题吧。还有10张也。总之明早先唱歌？学院级大学还有资格被人拿出来问吗wwwwwwww有必要咨询吗www">
 <meta property="article:published_time" content="2020-08-01T16:17:34.000Z">
-<meta property="article:modified_time" content="2020-08-01T16:22:08.311Z">
+<meta property="article:modified_time" content="2020-08-01T16:27:07.671Z">
 <meta property="article:author" content="aki126">
 <meta property="article:tag" content="日记">
 <meta name="twitter:card" content="summary">
@@ -179,46 +179,10 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+u3N8lzI2Fhn0lHwDmDWqlXHoXgXVhVmWaT3JOJVoq9fDuLRUYiraKda7Pt81ruvUCOirFQqFWRcO0vbtDihXU2A8/798oMvmNjm1OxAeixKN/eH6Bd9fQO/wXRNGf13osWDDWBMMKHGotlDoLkSBKIl4+qver4H//AEO/Kfeu5s2oDUE7uTWVcGwE5iItyOp2SanbdzHpToauadk0EBOx4Yb2OiVQtT1qB0Wxiwb9r44KTL8wKBaSaMJ44SCnSihidAmQ4ublICf/a+e1NXGkOmaplXkAq02Ink87uKNtOX90WF8zv9a/wkhPmkV4RMu5lksB08oBW43WOkNRo6YVTWgVHoAl+CD4TTLRLWvkjh3hgMT8PzxxvVKI4O2nRg6toGbCf3x5Qzv0J5o4vwd4Oa4CbrSXGHVORqHGgC743ofjPCN7izl0O42hlQL+/LxheX5VhE83XRL6feIeFm7THvSRK077rrXnjO4i07zXVdZyv+L9CflOA3k5H7zfVW5w2V5FMC1E0ppAWNQMkiszEqNenwnHZ0acd7qf7Ri8M2AKcHbaLpah3dNaSvfVtdod+V6aJ6xMiIxUcoD6SUkcLnFWPldWj8xYw1Lv7KZasGW+/eEKP+qhth+FeLfgqUSAxLPmJ2lMZeh0Dxjp4jLA5sZDMHhan6TmfhqUmTf/5nlXxUVWp9FKhALZHy3zlySpU6AT+ZfMoeMFR2Kph9G5TQVWk+0LmH96fKOvh4yD66QSu6k6QH6WZhGivFzXo9nUfhFay34JPzDs+TRfTd1m+8JUA3OjWfw=</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: #fef263;border-style: solid;color: #4a488e;"><div id="enc_error" style="display: inline-block;color: #e2041b;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "密码错误！"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>成功给switch设置了代理，就在刚才，一晚上折腾还唱不了歌索性看了kenn和前野的料理节目。声音太小啦。<br>反正也在日亚有准备了。<br>我也有疑惑前野的人气，不过现在姑且还在泥沼之中，也无话可说，只能说自带粉丝滤镜的锅。未来一年的计划已经出来了。剩下实行。还有几天考试，不过最近生肉什么也啃得很多，大概没问题吧。还有10张也。<br>总之明早先唱歌？<br>学院级大学还有资格被人拿出来问吗wwwwwwww有必要咨询吗wwwwwww<br>真是搞不懂wwwwwwwwwwwwwww</p>
+<p>然后又被骂了啊wwwwwwwwww虽然好不容易给switch也科学上网了，又是晚睡觉</p>
+<p>这个世界真是复杂啊wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwarota</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -226,7 +190,7 @@ doDecrypt(passwd, onError);
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-01T16:22:08.311Z" itemprop="dateUpdated">2020-08-02 00:22:08</time>
+    Last updated: <time datetime="2020-08-01T16:27:07.671Z" itemprop="dateUpdated">2020-08-02 00:27:07</time>
 </span><br>
 
 
