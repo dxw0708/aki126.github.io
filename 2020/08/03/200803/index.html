@@ -123,7 +123,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -206,7 +206,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+UJbiKbUiCPS5QSOu2N5dsfM+3dGlPZIY8fnDEgmNldCPPjEAvR+x9j8vGK+LlhQwPmTUaUaNCsTodzol3lf2LUr0oIMaQkcOwwsTnzeVwApVEg0m4yZX7MmkoBoqzJHILRqk05dZwvt3McrnzTdy98EuIHV7EqiBrAOh2dS2DTjBSAWzdFc+MwQUNQFDV8Dq7Bt7dxJxl9atp0bicon18fK4dtiw46uilf+blr+b+IWOira3LiQnt8xAyG3DGJqsRSh5jY7kZq2FeL2lWC4xO8UtNlTQM5rD8PAxUKMJjWXDX/vteaGbn53E8iKH8JFoNfs8zKncotOHp1N/dnbs+IIZ9/F/bUE3BQk8rbbSe3ESfyAcyT7zihbnwnz+Bhsp2Sjf9FptKWXQr+Ibd9MSnw2sDgvN+H6CH/2xPbF0opMhkFLo+HgUoNoAV0Y2FzeNRo5kvniq0NV+X83F6LEthN7EoaW54rItJ7o5QCm+ZBD1yzjTKeKJAyLA3oeJN/UlzkxQFhuXuUw==</div>
+<div id="enc_content" style="display:none">U2FsdGVkX185KtX9zcRpgopGuegugrhSvpi585RH9FgGe2EraDPj7kQJvAvdMeHDfBFYizxr4nVDg3RzsAYRn2Ve3uKvOg42Ed/V6thwtWRwi8SdBv8FkvJW7Ol/JMOyevr4axg/jQaS5LEqNM/hQtF0w0oMkJD5Szq5QY6SZWLpXOXuaOX4SHq0He7u+tsNFNugEPSeYaZ/SUCM1biAzFSiXAcs2sSJ0R42hiqS2bVas0/Cxqbyn1sHGDCkTbBRdJaIx2a5eTGbIJoLlYkN4SIJhrBfM1Br5GF+KzCp8t7AbtJ7U5Nzhlqf3VQnnF6bbKfM1N65ik74m6poLzCNH4FTdzLS9qinyP0Rw3H1FJ4kSLCjIm+hwYmJ/UN9acnWEJFpmQ/x64RRVGmUUVzr7343DcavRi+a4epBFzpAHSoScDHFkcbPXdmxGy4dZ03O12H32TemocyiMl0qOFH5wlI7N9/3yfUNTIx2DnrIy6jUiSKbmeIc9MejLjJ+VCEYveb0UzTBZTMz9L51aKqr4A==</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: #fef263;border-style: solid;color: #4a488e;"><div id="enc_error" style="display: inline-block;color: #e2041b;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -226,7 +226,7 @@ doDecrypt(passwd, onError);
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-03T15:42:10.926Z" itemprop="dateUpdated">2020-08-03 23:42:10</time>
+    最終更新：<time datetime="2020-08-03T15:42:10.926Z" itemprop="dateUpdated">2020-08-03 23:42:10</time>
 </span><br>
 
 
@@ -307,7 +307,14 @@ doDecrypt(passwd, onError);
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/08/04/z3/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">处江湖之远则忧其君</h4>
+      </a>
+    </div>
   
 
   
@@ -389,7 +396,7 @@ doDecrypt(passwd, onError);
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>このブログの内容物は<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja" target="_blank">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
