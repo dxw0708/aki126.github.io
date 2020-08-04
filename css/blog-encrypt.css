@@ -42,7 +42,7 @@
 .hbe-input-container label {
   -webkit-box-ordinal-group: 101;
   -ms-flex-order: 100;
-  font-size: 18px;
+  font-size: 20px;
   order: 100;
   color: #3f4f5b;
   -webkit-transform-origin: left bottom;
@@ -54,7 +54,7 @@
   order: 2;
   width: 0;
   height: 2px;
-  background: #658db5;
+  background: #ebf6f7;
   transition: all 0.3s;
 }
 .hbe-input-container input:focus {
@@ -72,21 +72,21 @@
 }
 
 .hbe-button {
-  width: 130px;
-  height: 40px;
-  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+  width: 184px;
+  height: 35px;
+  background: linear-gradient(to bottom, #a0d8ef 0%,#a0d8ef 100%); /* W3C */
   border: none;
   border-radius: 5px;
   position: relative;
-  border-bottom: 4px solid #2b8bc6;
+  border-bottom: 4px solid #a0d8ef;
   color: #fbfbfb;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-  font-size: 15px;
-  text-align: left;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+  font-size: 18px;
+  text-align: middle;
   text-indent: 5px;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
   cursor: pointer;
 
   display: block;
@@ -104,13 +104,13 @@
   width: 0;
   height: 0;
   display: block;
-  border-top: 20px solid #187dbc;
-  border-bottom: 20px solid #187dbc;
-  border-left: 16px solid transparent;
-  border-right: 20px solid #187dbc;
+  border-top: 0 solid #ec6d71;
+  border-bottom: 0 solid #a0d8ef;
+  border-left: 0 solid transparent;
+  border-right: 0 solid #a0d8ef;
   position: absolute;
   opacity: 0.6;
   right: 0;
   top: 0;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0 0 0;
 }
