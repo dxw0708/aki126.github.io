@@ -21,12 +21,12 @@
     
     
     <meta name="keywords" content="日记">
-    <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+    <meta name="description" content="今天做了差不多一整天的小破站，增加評論功能，更改顏色，開始實施自我滿足計劃。 起來太晚，給母上科普墻頭太過興奮。 不過這個月做夢也是夠多，夜晚和白天一樣生活豐富，有夢見只狼世界觀卻身著巫女服的boss，有和墻頭的r15春夢，還有夢見親人進icu。真是和這個月相符的夢。人生第一件大事——高考，勉強完成。不願承認又不能自拔地確認了追星少女身份。一端肝艦一端肝刀一端看東看西一端買東買西。 結果就是廢了？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="200729">
 <meta property="og:url" content="http://yoursite.com/2020/07/29/20200729/index.html">
 <meta property="og:site_name" content="YUMENO MATAYUME">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="今天做了差不多一整天的小破站，增加評論功能，更改顏色，開始實施自我滿足計劃。 起來太晚，給母上科普墻頭太過興奮。 不過這個月做夢也是夠多，夜晚和白天一樣生活豐富，有夢見只狼世界觀卻身著巫女服的boss，有和墻頭的r15春夢，還有夢見親人進icu。真是和這個月相符的夢。人生第一件大事——高考，勉強完成。不願承認又不能自拔地確認了追星少女身份。一端肝艦一端肝刀一端看東看西一端買東買西。 結果就是廢了？">
 <meta property="article:published_time" content="2020-07-29T15:37:01.000Z">
 <meta property="article:modified_time" content="2020-07-31T09:13:07.256Z">
 <meta property="article:author" content="aki126">
@@ -123,7 +123,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -179,46 +179,12 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+ipRM4wGQvXr5jBZAC8/jbWiSdZbKau78xcG9Vy87Ws/IedERRB2fzHVrJjoGVenBwb/e9/oG83O7auzaFte+Cw5I9mawp/i8JZF/BJ39Rg5ZwIb0orf0YzOcpWgplSYb39oXvvPKB8+O4N3Iu0dI0hlWq/s/MBWqBDgPM//EPJ977uKJUd64bsuMx6mD7tZszUVgMByQi5D/0ldN2jRXVawf4FMM20IUWVBwXgMOGxWdEzWGHQkmbFm1T0FyePlFFbCWA/1I7cv6y/DpjXq3i9uEI3XnARoO/EwHw789s89q+aVvw8A0EBBgvMAPWXwT/ahJh6rVSyvoNs1+rPjui42B8DVqFswGwfOz2cRlYCEITSjrr9Sn9n9GM6xqjADkoZbyucmuOz2hc1Y1YnPO50NDOOUu3uLBqY5D3hGkGMcFYShvKHYEzpkfGAHANDvruqgaVfYlVUfv2bdqSS2QDWrik69IUVSo24m8odKhA+lhU5vlkev/DNnKS/tRuN6PKeYBDkKt5EYXo3YrCK40VlqzOxH42bH3V6YZwDgXqQfsKQxCk8nb4idY6v0KnriMGsQ9KtOt+UkocPNZTURzYFcfDWi/iB8YthzKriHDrhKn4jhTgUiG8ciadsAqbI5EYXGicXxXE4YM7cV5Kq7zQkIK226tlqEgxGHLPKZdKWX82vZcrfmWDYiJjySZetEzWXjaSJOOMDw/RgqoLbUGbVKpiOnWPQDUCGKHmCvIZOCfUYgnf8BivToZIQy0Fh0KUOJ82a9J7hv80skt+FtUw2GWCZBApQQOOtRc5XpCVAK3PVivee6iv8+boTORuNqTD9zUK90IKFQqogAZEbp7LhFJ+/m/cJ2eklMXM6LlRDU0ZnziGDAq6i89cLAnSF00fpwd1pmuL4MdJIPx0P49uHQg9yagc4qJALk+DdOs7+a33PEOBcsK9BdQyFWfa98lG86DZ2xgY79mshUE0uZilA99Y+E4mfnSy2VyqREKaxXjcNbIEV2qdWacvjhIdnP/oGuglwNWUBA4dLc9FM3waoOxHYdGA9p0=</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: #fef263;border-style: solid;color: #4a488e;"><div id="enc_error" style="display: inline-block;color: #e2041b;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "密码错误！"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>今天做了差不多一整天的小破站，增加評論功能，更改顏色，開始實施自我滿足計劃。</p>
+<p>起來太晚，給母上科普墻頭太過興奮。</p>
+<p>不過這個月做夢也是夠多，夜晚和白天一樣生活豐富，有夢見只狼世界觀卻身著巫女服的boss，有和墻頭的r15春夢，還有夢見親人進icu。真是和這個月相符的夢。人生第一件大事——高考，勉強完成。不願承認又不能自拔地確認了追星少女身份。一端肝艦一端肝刀一端看東看西一端買東買西。</p>
+<p>結果就是廢了？還好，建個破blo做安慰。就是這個沒有後端的新米博客的作用。</p>
+<p>幾乎所有所配角色都不算墻頭，但對本人卻很上頭。<br>沒救了。</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -226,7 +192,7 @@ doDecrypt(passwd, onError);
     <div class="content">
         
 <span class="post-time">
-    最終更新：<time datetime="2020-07-31T09:13:07.256Z" itemprop="dateUpdated">2020-07-31 17:13:07</time>
+    Last updated: <time datetime="2020-07-31T09:13:07.256Z" itemprop="dateUpdated">2020-07-31 17:13:07</time>
 </span><br>
 
 
@@ -396,7 +362,7 @@ doDecrypt(passwd, onError);
 
         <p>
             
-            <span>このブログの内容物は<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja" target="_blank">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
