@@ -15,10 +15,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bilibili:before {
+.icon-CN_bilibiliB:before {
   content: "\e64e";
 }
 
 .icon-ameba:before {
   content: "\e624";
 }
+
